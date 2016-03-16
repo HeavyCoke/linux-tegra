@@ -51,6 +51,7 @@
  */
 #define UART_VIRTUAL_BASE		0xfe800000
 
+#if 0
 #define checkuart(rp, rv, lhu, bit, uart) \
 		/* Load address of CLK_RST register */ \
 		ldr	rp, =TEGRA_CLK_RST_DEVICES_##lhu ; \
@@ -72,6 +73,11 @@
 		ldr	rp, =TEGRA_UART##uart##_BASE ; \
 		/* Jump to save UART address */ \
 		b 91f
+#endif
+    
+#define checkuart(rp, rv, lhu, bit, uart) \
+        ldr rp, = TEGRA_UARTD_BASE; \
+        b   91f
 
 		.macro  addruart, rp, rv, tmp
 		adr	\rp, 99f		@ actual addr of 99f
