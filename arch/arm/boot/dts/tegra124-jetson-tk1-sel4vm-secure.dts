@@ -1652,6 +1652,9 @@
 			spi-max-frequency = <20000000>;
 		};
 	};
+	rtc@0,7000e000 {
+		status = "disabled";
+	};
 
 	pmc@0,7000e400 {
 		nvidia,invert-interrupt;
@@ -1662,7 +1665,7 @@
 		nvidia,core-pwr-off-time = <61036>;
 		nvidia,core-power-req-active-high;
 		nvidia,sys-clock-req-active-high;
-
+		status = "disabled";
 		i2c-thermtrip {
 			nvidia,i2c-controller-id = <4>;
 			nvidia,bus-addr = <0x40>;
