@@ -68,6 +68,13 @@
 		};
 
 	};
+	flow-controller@0,60007000 {
+		status = "disabled";
+	};
+
+	actmon@0,6000c800 {
+		status = "disabled";
+	};
 
 	pinmux: pinmux@0,70000868 {
 		pinctrl-names = "boot";
