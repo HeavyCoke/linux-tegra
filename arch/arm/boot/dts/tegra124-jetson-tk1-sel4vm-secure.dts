@@ -3,7 +3,7 @@
 #include <dt-bindings/input/input.h>
 #include "tegra124.dtsi"
 
-#include "tegra124-jetson-tk1-emc.dtsi"
+//#include "tegra124-jetson-tk1-emc.dtsi"
 
 / {
 	model = "NVIDIA Tegra124 Jetson TK1";
@@ -1672,6 +1672,18 @@
 			nvidia,reg-addr = <0x36>;
 			nvidia,reg-data = <0x2>;
 		};
+	};
+
+	fuse@0,7000f800 {
+		status = "disabled";
+	};
+
+	mc: memory-controller@0,70019000 {
+		status = "disabled";
+	};
+
+	emc: emc@0,7001b000 {
+		status = "disabled";
 	};
 
 	/* Serial ATA */
