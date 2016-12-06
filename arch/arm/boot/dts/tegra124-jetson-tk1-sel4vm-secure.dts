@@ -11,7 +11,8 @@
     interrupt-parent = <&gic>;
 
     chosen {
-        bootargs = "console=ttyS0,115200n8 debug";
+       // bootargs = "console=ttyS0,115200n8 debug";
+	bootargs ="console=ttyS0,115200n8 debug otf_key=c75e5bb91eb3bd947560357b64422f85 usbcore.old_scheme_first=1 tegraid=40.1.1.0.0 modem_id=0 android.kerneltype=normal commchip_id=0 usb_port_owner_info=2 lane_owner_info=1 touch_id=0@0 board_info=0x0177:0x0000:0x02:0x43:0x00 init=/sbin/init root=/dev/mmcblk0p2 rw rootwait gpt earlyprintk";
     };
 
 	aliases {
@@ -26,7 +27,7 @@
 	};
 
 	pcie-controller@0,01003000 {
-		status = "okay";
+		status = "disabled";
 
 		avddio-pex-supply = <&vdd_1v05_run>;
 		dvddio-pex-supply = <&vdd_1v05_run>;
@@ -37,11 +38,11 @@
 		avdd-pll-erefe-supply = <&avdd_1v05_run>;
 
 		pci@1,0 {
-			status = "okay";
+			status = "disabled";
 		};
 
 		pci@2,0 {
-			status = "okay";
+			status = "disabled";
 		};
 	};
 
