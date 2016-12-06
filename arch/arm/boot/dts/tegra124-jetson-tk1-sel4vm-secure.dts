@@ -1688,7 +1688,7 @@
 
 	/* Serial ATA */
 	sata@0,70020000 {
-		status = "okay";
+		status = "disabled";
 
 		hvdd-supply = <&vdd_3v3_lp0>;
 		vddio-supply = <&vdd_1v05_run>;
