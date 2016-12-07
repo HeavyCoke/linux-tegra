@@ -1770,15 +1770,16 @@
 
 	usb-phy@0,7d004000 {
 		status = "okay";
+		vbus-supply = <&vdd_usb3_vbus>;
 	};
 
 	/* USB A connector */
 	usb@0,7d008000 {
-		status = "okay";
+		status = "disabled";
 	};
 
 	usb-phy@0,7d008000 {
-		status = "okay";
+		status = "disabled";
 		vbus-supply = <&vdd_usb3_vbus>;
 	};
 
