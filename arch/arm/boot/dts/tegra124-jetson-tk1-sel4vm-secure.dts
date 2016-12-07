@@ -1705,7 +1705,7 @@
 	padctl@0,7009f000 {
 		pinctrl-0 = <&padctl_default>;
 		pinctrl-names = "default";
-
+		status = "disabled";
 		padctl_default: pinmux {
 			usb3 {
 				nvidia,lanes = "pcie-0", "pcie-1";
