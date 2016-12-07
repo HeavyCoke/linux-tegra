@@ -68,6 +68,11 @@
 		};
 
 	};
+
+	timer@0,60005000 {
+		status = "disabled";
+	};
+
 	flow-controller@0,60007000 {
 		status = "disabled";
 	};
