@@ -84,7 +84,7 @@
 	apbdma: dma@0,60020000 {
 		status = "disabled";
 	};
-
+/*
 	pinmux: pinmux@0,70000868 {
 		pinctrl-names = "boot";
 		pinctrl-0 = <&state_boot>;
@@ -1390,7 +1390,7 @@
 			};
 		};
 	};
-
+*/
 	/* DB9 serial port */
 	serial@0,70006300 {	
         compatible = "nvidia,tegra124-uart", "nvidia,tegra20-uart";
