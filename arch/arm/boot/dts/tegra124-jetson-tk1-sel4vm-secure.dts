@@ -1699,7 +1699,7 @@
 	};
 
 	hda@0,70030000 {
-		status = "okay";
+		status = "disabled";
 	};
 
 	padctl@0,7009f000 {
