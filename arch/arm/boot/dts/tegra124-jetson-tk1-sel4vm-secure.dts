@@ -1745,9 +1745,13 @@
 		non-removable;
 	};
 
+	soctherm: thermal-sensor@0,700e2000 {
+		status = "disabled";
+	};
+
 	/* CPU DFLL clock */
 	clock@0,70110000 {
-		status = "okay";
+		status = "disabled";
 		vdd-cpu-supply = <&vdd_cpu>;
 		nvidia,i2c-fs-rate = <400000>;
 	};
