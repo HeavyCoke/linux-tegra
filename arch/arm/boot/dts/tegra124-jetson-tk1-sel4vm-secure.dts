@@ -1757,8 +1757,9 @@
 	};
 
 	ahub@0,70300000 {
+		status = "disabled";
 		i2s@0,70301100 {
-			status = "okay";
+			status = "disabled";
 		};
 	};
 
